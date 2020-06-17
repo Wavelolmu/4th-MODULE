@@ -51,6 +51,7 @@
     <meta charset=UTF-8 />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
+  <body>
   <nav>
     <ul>
       <li id="about" class="nav-li"><div class='current-hover'>О НАС</div></li>
@@ -59,20 +60,55 @@
       <li id="cart" class="nav-li"><div class='hover'>КОРЗИНА</div></li>
     </ul>
   </nav>
-  <div class="demo-wrapper">
-    <img src="pics/orbit/moon.png" id="moon" alt="" class="flying">
-    <img src="pics/orbit/flower1.png" id="flower1" alt="" class="flying">
-    <img src="pics/orbit/condi.png" id="condi" alt="" class="flying">
-    <img src="pics/orbit/flower2.png" id="flower2" alt="" class="flying">
-    <img src="pics/orbit/vacuum.png" id="vacuum1" alt="" class="flying">
-    <img src="pics/orbit/skull.png" id="skull" alt="" class="flying">
-    <img src="pics/orbit/brush.png" id="brush" alt="" class="flying">
-    <img src="pics/orbit/demon.png" id="demon" alt="" class="flying">
-    <svg preserveAspectRatio="none" width="1279" height="825" viewBox="0 0 1279 825" fill="none" id='demo-svg'>
-      <path stroke="#36FFC3" fill="none" d="M1205.62 579.193C1195.69 612.941 1170.43 640.483 1133.17 661.376C1095.91 682.271 1046.68 696.497 988.881 703.613C873.292 717.846 723.544 703.627 567.047 657.559C410.55 611.492 276.98 542.313 187.537 467.726C142.814 430.432 109.142 391.802 89.1438 354.052C69.147 316.305 62.836 279.47 72.77 245.722C82.704 211.975 107.965 184.433 145.224 163.54C182.485 142.645 231.716 128.419 289.511 121.302C405.1 107.07 554.848 121.289 711.345 167.356C867.843 213.423 1001.41 282.603 1090.86 357.189C1135.58 394.483 1169.25 433.114 1189.25 470.863C1209.25 508.61 1215.56 545.446 1205.62 579.193Z"></path>
-    </svg>
-  </div>
+  <section id='starter'>
+    <div class="demo-wrapper">
+      <img src="pics/orbit/moon.png" id="moon" alt="" class="flying">
+      <img src="pics/orbit/flower1.png" id="flower1" alt="" class="flying">
+      <img src="pics/orbit/condi.png" id="condi" alt="" class="flying">
+      <img src="pics/orbit/flower2.png" id="flower2" alt="" class="flying">
+      <img src="pics/orbit/vacuum.png" id="vacuum1" alt="" class="flying">
+      <img src="pics/orbit/skull.png" id="skull" alt="" class="flying">
+      <img src="pics/orbit/brush.png" id="brush" alt="" class="flying">
+      <img src="pics/orbit/demon.png" id="demon" alt="" class="flying">
+      <svg preserveAspectRatio="none" width="1279" height="825" viewBox="0 0 1279 825" fill="none" id='demo-svg'>
+        <path stroke="#36FFC3" fill="none" d="M1205.62 579.193C1195.69 612.941 1170.43 640.483 1133.17 661.376C1095.91 682.271 1046.68 696.497 988.881 703.613C873.292 717.846 723.544 703.627 567.047 657.559C410.55 611.492 276.98 542.313 187.537 467.726C142.814 430.432 109.142 391.802 89.1438 354.052C69.147 316.305 62.836 279.47 72.77 245.722C82.704 211.975 107.965 184.433 145.224 163.54C182.485 142.645 231.716 128.419 289.511 121.302C405.1 107.07 554.848 121.289 711.345 167.356C867.843 213.423 1001.41 282.603 1090.86 357.189C1135.58 394.483 1169.25 433.114 1189.25 470.863C1209.25 508.61 1215.56 545.446 1205.62 579.193Z"></path>
+      </svg>
+    </div>
+    <p class="question" id="question-first">ВАШЕМУ ДОМУ <br> НУЖЕН ЭКЗОРЦИЗМ?</p>
+    <p class="question" id="question-second">МЕБЕЛЬ ЛЕТАЕТ <br> ПРОТИВ ВАШЕЙ ВОЛИ?</p>
+    <p class="question" id="question-third">ЗЕЛЬЕ ПРОЛИЛОСЬ <br> НА ПЛАТЬЕ?</p>
+    <p class="question" id="question-fourth">НЕ ОТМЫВАЕТСЯ <br> КРОВЬ ЖЕРТВЫ?</p>
+    <p id="cleaning">Ритуальный клининг с 1666 года</p>
+    <img src="pics/orbit/broom.svg" alt="Broom!" id='logo'>
+    <button type="button" name="button" id='yes' onclick="intro()">Да!</button>
+  </section>
+  <section id='history'>
+    <p><span class='keleti'>&laquo;Брум&raquo; был основан в&nbsp;1666 году
+как&nbsp;церковный орден<span class='roboto'>,</span> который борется с&nbsp;демонами и&nbsp;занимается уборкой<span class='roboto'>.</span> В&nbsp;1672 году адепты ордена написали &laquo;Codex Dictum&raquo;<span class='roboto'>&nbsp;</span>&mdash; подробное руководство по&nbsp;экзорцизму<span class='roboto'>,</span> которое&nbsp;до&nbsp;сих пор считается главным трудом на&nbsp;эту тему<span class='roboto'>.</span></span>
+<span class="red-letter"> В&nbsp;награду</span> за&nbsp;это Папа римский Иннокентий X&nbsp;даровал нам замок, который до&nbsp;настоящего времени используется как&nbsp;пристанище компании: здесь находятся магазин ритуальных чистящих средств, а&nbsp;также темница для&nbsp;пойманных демонов.</p>
+<img src="pics/history1.png" alt="Витраж" id="pic1">
+<img src="pics/history2.png" alt="Витраж" id="pic2">
+<img src="pics/history3.png" alt="Витраж" id="pic3">
+  </section>
+  <section id='worker'>
+    <p id='first'>Наши сотрудницы&nbsp;&mdash; профессионалки в&nbsp;области клининга, которые могут справиться с&nbsp;любым пятном.</p>
+    <p id='second'>А&nbsp;еще они&nbsp;&mdash; бессмертные суккубы<span class='roboto'>,</span> обладающие многовековым опытом охоты на&nbsp;демонов<span class='roboto'>.</span></p>
+    <p id='third'>Эта смесь позволяет им&nbsp;избавиться
+от&nbsp;любых загрязнений, будь они физическими или&nbsp;инфернальными.</p>
+    <img src="pics/witch.png" alt="Ведьма!" id='witch'>
+    <div class="wrapper2">
+      <svg  id="demo-svg2" x="0px" y="0px"
+      	 width="1000px" height="700px" viewBox="0 0 1000 700">
+      	<path fill='none' stroke='none' d="M828.168 98.9832C837.024 112.325 835.033 132.121 823.546 156.667C812.074 181.183 791.201 210.28 762.594 242.077C705.386 305.666 617.329 379.967 511.982 449.896C406.635 519.824 303.973 572.121 223.16 600.15C182.75 614.166 147.831 622.103 120.785 623.156C93.704 624.21 74.6887 618.359 65.8323 605.017C56.976 591.675 58.9671 571.879 70.4537 547.333C81.9257 522.817 102.799 493.72 131.406 461.923C188.614 398.334 276.671 324.033 382.018 254.104C487.365 184.176 590.027 131.879 670.84 103.85C711.25 89.8342 746.169 81.8966 773.215 80.8439C800.296 79.7898 819.311 85.6412 828.168 98.9832Z"/>
+      <img src="pics/orbit/moon2.png" id="moon2" alt="">
+      <img src="pics/orbit/dagger.png" id="dagger" alt="">
+      <img src="pics/orbit/bucket.png" id="bucket" alt="">
+      <img src="pics/orbit/vacuum2.png" id="vacuum2" alt="">
+    </div>
+  </section>
+  <section>
 
+  </section>
   <script src="js/anime.min.js"></script>
   <script src="js/index.js" charset="utf-8"></script>
   </body>
