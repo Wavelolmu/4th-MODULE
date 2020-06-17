@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/new.css">
+    <script src="js/anime.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+  <nav>
+    <ul>
+      <li id="about" class="nav-li"><div class='current-hover'>О НАС</div></li>
+      <li id="service" class="nav-li"><div class='hover'>УСЛУГИ</div></li>
+      <li id="shop" class="nav-li"><div class='hover'>ТОВАРЫ</div></li>
+      <li id="cart" class="nav-li"><div class='hover'>КОРЗИНА</div></li>
+    </ul>
+  </nav>
+  <section id="starter">
+    <svg width="1279" height="825" viewBox="0 0 1279 825" fill="none" id='orbit'>
+    <path d="M1205.62 579.193C1195.69 612.941 1170.43 640.483 1133.17 661.376C1095.91 682.271 1046.68 696.497 988.881 703.613C873.292 717.846 723.544 703.627 567.047 657.559C410.55 611.492 276.98 542.313 187.537 467.726C142.814 430.432 109.142 391.802 89.1438 354.052C69.147 316.305 62.836 279.47 72.77 245.722C82.704 211.975 107.965 184.433 145.224 163.54C182.485 142.645 231.716 128.419 289.511 121.302C405.1 107.07 554.848 121.289 711.345 167.356C867.843 213.423 1001.41 282.603 1090.86 357.189C1135.58 394.483 1169.25 433.114 1189.25 470.863C1209.25 508.61 1215.56 545.446 1205.62 579.193Z" stroke="#36FFC3" stroke-linecap="square"/>
+    </svg>
+    <img src="pics/orbit/brush.png" id="orbit-brush" alt="">
+    <svg id="demo-svg" width="1000" height="500">
+        <path stroke="red" fill="none" d="M 106 316 L 195 94 L 310 310 L 354 70 L 416 181 L 539 47 L 591 266 L 755 55 L 805 413 Z"></path>
+      </svg>
+    <div id='fuck'>
+      😎
+    </div>
+    <script src="anime.min.js"></script>
+    <script>
+      let path = anime.path('#demo-svg path');
+
+      anime({
+        targets: '#fuck',
+        translateX: path('x'),
+        translateY: path('y'),
+        rotate: path('angle'),
+        easing: 'linear',
+        duration: 5000,
+        loop: true
+      });
+    </script>
+  </section>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8 />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <nav>
+    <ul>
+      <li id="about" class="nav-li"><div class='current-hover'>О НАС</div></li>
+      <li id="service" class="nav-li"><div class='hover'>УСЛУГИ</div></li>
+      <li id="shop" class="nav-li"><div class='hover'>ТОВАРЫ</div></li>
+      <li id="cart" class="nav-li"><div class='hover'>КОРЗИНА</div></li>
+    </ul>
+  </nav>
+  <div class="demo-wrapper">
+    <img src="pics/orbit/moon.png" id="moon" alt="" class="flying">
+    <img src="pics/orbit/flower1.png" id="flower1" alt="" class="flying">
+    <img src="pics/orbit/condi.png" id="condi" alt="" class="flying">
+    <img src="pics/orbit/flower2.png" id="flower2" alt="" class="flying">
+    <img src="pics/orbit/vacuum.png" id="vacuum1" alt="" class="flying">
+    <img src="pics/orbit/skull.png" id="skull" alt="" class="flying">
+    <img src="pics/orbit/brush.png" id="brush" alt="" class="flying">
+    <img src="pics/orbit/demon.png" id="demon" alt="" class="flying">
+    <svg preserveAspectRatio="none" width="1279" height="825" viewBox="0 0 1279 825" fill="none" id='demo-svg'>
+      <path stroke="#36FFC3" fill="none" d="M1205.62 579.193C1195.69 612.941 1170.43 640.483 1133.17 661.376C1095.91 682.271 1046.68 696.497 988.881 703.613C873.292 717.846 723.544 703.627 567.047 657.559C410.55 611.492 276.98 542.313 187.537 467.726C142.814 430.432 109.142 391.802 89.1438 354.052C69.147 316.305 62.836 279.47 72.77 245.722C82.704 211.975 107.965 184.433 145.224 163.54C182.485 142.645 231.716 128.419 289.511 121.302C405.1 107.07 554.848 121.289 711.345 167.356C867.843 213.423 1001.41 282.603 1090.86 357.189C1135.58 394.483 1169.25 433.114 1189.25 470.863C1209.25 508.61 1215.56 545.446 1205.62 579.193Z"></path>
+    </svg>
+  </div>
+
+  <script src="js/anime.min.js"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+  </body>
+</html>

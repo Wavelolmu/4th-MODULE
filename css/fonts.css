@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Engry";
+  src: url("fonts\engry.otf") format("opentype"),
+}
+@font-face {
+  font-family: "Keleti";
+  src: url("fonts\keleti.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "Le Murmure";
+  src: url("fonts\le-murmure.otf") format("opentype"),
+}
+@font-face {
+  font-family: "Manege Demo";
+  font-weight: 100;
+  src: url("fonts\manege.otf") format("opentype"),
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  src: url("fonts\roboto-thin.ttf") format("truetype"),
+}
