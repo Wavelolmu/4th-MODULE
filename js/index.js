@@ -123,10 +123,13 @@ function intro() {
   document.querySelector('#question-third').style.display = 'none';
   document.querySelector('#question-fourth').style.display = 'none';
   document.querySelector('#logo').style.opacity = '1';
+  document.querySelector('#answer').style.opacity = '1';
+  setTimeout(() =>
+    document.querySelector('#answer').style.opacity = '0', 2000);
   document.querySelector('#cleaning').style.opacity = '1';
   document.querySelector('#yes').style.opacity = '0';
   setTimeout(() =>
-  document.querySelector('#yes').style.display = 'none', 300);
+    document.querySelector('#yes').style.display = 'none', 300);
 };
 
 let path2 = anime.path('#demo-svg2 path');
@@ -140,6 +143,8 @@ anime({
   duration: 8000,
   loop: true,
 });
+
+window.onload = document.querySelector('#bucket').style.opacity = '1';
 
 window.onload = setTimeout(function() {
   document.querySelector('#vacuum2').style.opacity = '1';
