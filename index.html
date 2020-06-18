@@ -3,16 +3,26 @@
   <head>
     <meta charset=UTF-8 />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БРУМ!</title>
   </head>
   <body>
   <nav>
     <ul>
+      <li id="menu" class="nav-li"><div class='current-hover' onclick='popup()'>МЕНЮ</div></li>
       <li id="about" class="nav-li"><div class='current-hover'>О НАС</div></li>
       <li id="service" class="nav-li"><div class='hover'>УСЛУГИ</div></li>
       <li id="shop" class="nav-li"><div class='hover'>ТОВАРЫ</div></li>
       <li id="cart" class="nav-li"><div class='hover'>КОРЗИНА</div></li>
     </ul>
   </nav>
+  <ul id='mobile-nav'>
+    <li id="menu1" class="nav-li"><div class='current-hover' onclick='popup()'>МЕНЮ</div></li>
+    <li id="about1" class="nav-li"><div class='current-hover'>О НАС</div></li>
+    <li id="service1" class="nav-li"><div class='hover'>УСЛУГИ</div></li>
+    <li id="shop1" class="nav-li"><div class='hover'>ТОВАРЫ</div></li>
+    <li id="cart1" class="nav-li"><div class='hover'>КОРЗИНА</div></li>
+  </ul>
   <section id='starter'>
     <div class="demo-wrapper">
       <img src="pics/orbit/moon.png" id="moon" alt="" class="flying">
@@ -29,10 +39,10 @@
     </div>
     <p class="question" id="question-first">ВАШЕМУ ДОМУ <br> НУЖЕН ЭКЗОРЦИЗМ?</p>
     <p class="question" id="question-second">МЕБЕЛЬ ЛЕТАЕТ <br> ПРОТИВ ВАШЕЙ ВОЛИ?</p>
-    <p class="question" id="question-third">ЗЕЛЬЕ ПРОЛИЛОСЬ <br> НА ПЛАТЬЕ?</p>
+    <p class="question" id="question-third">ЗЕЛЬЕ ПРОЛИЛОСЬ <br> НА&nbsp;ПЛАТЬЕ?</p>
     <p class="question" id="question-fourth">НЕ ОТМЫВАЕТСЯ <br> КРОВЬ ЖЕРТВЫ?</p>
-    <p id="answer">ТОГДА ВЫ <br> ПРИШЛИ ПО АДРЕСУ!</p>
-    <p id="cleaning">Ритуальный клининг с 1666 года</p>
+    <p id="answer">ТОГДА ВЫ <br> ПРИШЛИ ПО&nbsp;АДРЕСУ!</p>
+    <p id="cleaning">Ритуальный клининг с&nbsp;1666 года</p>
     <img src="pics/orbit/broom.svg" alt="Broom!" id='logo'>
     <button type="button" name="button" id='yes' onclick="intro()">Да!</button>
   </section>

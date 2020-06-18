@@ -57,10 +57,6 @@ nav {
   background-color: white;
 }
 
-#mobile-nav, #menu {
-  display: none;
-}
-
 ul {
   width: 100%;
   display: flex;
@@ -598,208 +594,37 @@ footer {
 
 @media (min-width: 176px) and (max-width: 500px) {
   :root {
-    --nav-font-size: 26px;
-    --moon-height: 60px;
-    --flower1-height: 60px;
-    --flower2-height: 70px;
-    --condi-height: 70px;
-    --vacuum1-height: 60px;
-    --skull-height: 60px;
-    --brush-height: 60px;
-    --demon-height: 70px;
-    --question-size: 26px;
-    --pic1-height: 420px;
-    --pic2-height: 200px;
-    --pic3-height: 160px;
-    --keleti-size: 18px;
-    --manege-size: 17px;
-    --manege-line1: 28px;
-    --history-width: 280px;
-  }
-
-  #menu1 {
-    display: block;
-    z-index: 10;
-    transition: filter 0.3s ease-out;
-  }
-
-  #about1 {
-    z-index: 9;
-    transition: top 0.3s ease-out;
-    color: var(--green);
-  }
-  #service1 {
-    z-index: 8;
-    transition: top 0.3s ease-out;
-  }
-  #shop1 {
-    z-index: 7;
-    transition: top 0.3s ease-out;
-  }
-  #cart1 {
-    z-index: 6;
-    transition: top 0.3s ease-out;
+    --nav-height: 48px;
+    --nav-font-size: 26px ;
   }
 
   nav {
+    height: 48px ;
+    border-radius: 30px ;
+  }
+
+  #service {
+    display: none;
+  }
+  #shop {
+    display: none;
+  }
+  #cart {
     display: none;
   }
 
-  #mobile-nav {
-    display: block;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-  ul {
-    /* width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 20px; */
 
-  }
 
-  li {
-    height: 26px;
-    border: 1px solid var(--green);
-    border-radius: 12px;
-    font-size: 14px !important;
-    padding-top: 4px;
-    width: 200px;
-    background-color: white;
-    position: fixed;
-    top: 8px;
-  }
-
-  .hover, .current-hover {
-    border: 0;
-  }
-
-  #about, #service, #shop, #cart {
-    transition: top 0.5s linear;
-  }
-
-  .hover:hover {
-    border: 0;
-  }
-  .current-hover:hover {
-    border: 0;
-  }
-
-  .demo-wrapper {
-    z-index: 0;
-    height: 110vh;
-    width: 100vw;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .flying {
-    top:-35px;
-    left:-10px;
-    transition: opacity 0.4s ease-out;
-  }
-
-  #demo-svg {
-    height: 100vh;
-    width: 90vw;
-    /* max-width: 1000px;
-    max-height: 700px; */
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    top: -1vh;
-    z-index: 1;
-  }
-
-  .question {
-    max-width: 300px;
-    font-size: 24px;
-    margin-top: -10vh;
-  }
 
 
   #yes {
-    border: 1px solid var(--green);
-    border-radius: 16px;
-    height: 26px;
-    background: none;
-    padding: 0 64px;
-    /* padding-bottom: 2px; */
-    font-size: 16px;
-    font-family: 'Keleti';
-    margin-top: 18px;
-    position: absolute;
-    cursor: pointer;
-    background-color: white;
-    transition: filter 0.3s ease-out,
-                opacity 0.3s ease-out;
-    outline: none;
-    opacity: 1;
-    z-index: 4;
+    display: none;
   }
-
-  #cleaning {
-    font-size: 12px;
-    line-height: var(-manege-line);
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-    transition-delay: 3.5s;
-    margin-left: 22vw;
-    margin-top: -17vw;
-    width: 120px;
-  }
-
-  #logo {
-    width: 90vw;
-  }
-
-  #history {
-      margin-top: -140px;
-  }
-
-  #history p {
-    z-index: 4;
-  }
-
-  #pic1 {
-    margin-top: 608px;
-    left: 14vw;
-    position: absolute;
-    z-index: 1;
-  }
-  #pic2 {
-    margin-top: 520px;
-    right: 10vw;
-    position: absolute;
-    z-index: 2;
-  }
-  #pic3 {
-    margin-top: 752px;
-    left: 5vw;
-    position: absolute;
-    z-index: 1;
-    transform: scaleX(-1);
-  }
-
-  .red-letter {
-    margin-left: 20px;
-  }
-
   #worker {
     display: none;
   }
-  #services {
+  #history {
     display: none;
   }
   #make-sure {
@@ -811,6 +636,13 @@ footer {
   footer {
     display: none;
   }
+  .question {
+    display: none;
+  }
+  .demo-wrapper {
+    display: none;
+  }
+
 }
 
 @media (min-width: 501px) and (max-width: 1024px) {

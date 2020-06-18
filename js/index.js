@@ -241,3 +241,24 @@ var l = setTimeout(() => {
     o++;
   }, 4000);
 }, 4500);
+
+var menu = 1;
+
+function popup() {
+  if (i > 0) {
+    document.querySelector('#menu1').style.filter = 'var(--glow)';
+    document.querySelector('#about1').style.top = '43px';
+    document.querySelector('#service1').style.top = '78px';
+    document.querySelector('#shop1').style.top = '113px';
+    document.querySelector('#cart1').style.top = '148px';
+    i = i * -1;
+  } else {
+    document.querySelector('#menu1').style.filter = 'none';
+    document.querySelector('#about1').style.top = '8px';
+    document.querySelector('#service1').style.top = '8px';
+    document.querySelector('#shop1').style.top = '8px';
+    document.querySelector('#cart1').style.top = '8px';
+    i = i * -1;
+  }
+
+}
